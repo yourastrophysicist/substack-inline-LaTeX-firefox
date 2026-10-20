@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Substack Inline LaTeX for Firefox",
+  "version": "0.1.0",
+  "description": "Type $...$ in the Substack editor, or paste text containing it, and get Substack's own inline math.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.substack.com/publish/post/*"],
+      "js": ["content.js"],
+      "world": "MAIN",
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "substack-inline-latex@yourastro.space",
+      "strict_min_version": "128.0"
+    }
+  }
+}
