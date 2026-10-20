@@ -1,0 +1,1 @@
+# substack-inline-LaTeX-firefox
